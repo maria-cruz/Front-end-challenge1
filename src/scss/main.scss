@@ -1,0 +1,15 @@
+//absracts
+@import "./abstracts/mixins";
+@import "./abstracts/utilities";
+@import "./abstracts/variables";
+
+//base
+@import "./base/base";
+
+//components
+@import "./components/header";
+@import "./components/emptyState";
+@import "./components/footer";
+
+//pages
+@import "./pages/home";

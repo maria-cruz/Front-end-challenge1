@@ -1,0 +1,17 @@
+.empty-state-container {
+  height: 70rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .ant-empty-image img {
+    width: 26rem;
+    height: 20remß;
+  }
+
+  .empty-state-description {
+    font-weight: 500;
+  }
+}
