@@ -82,34 +82,48 @@ const Home = () => {
 
       <div className="author-section">
         <div className="author-wrapper">
-          <h3>Client testimonials</h3>
+          <h3 className="testimonial-label">CLIENT TESTIMONIALS</h3>
           <div className="author-info">
             <div className="info-item">
-              <img src={emilyImage} alt="emily.jpg" />
-              <p>
+              <div className="image-container">
+                <img src={emilyImage} alt="emily.jpg" />
+              </div>
+              <p className="author-testimony">
                 We put our trust in Sunnyside and they delivered, making sure
                 our needs were met and deadlines were always hit.
               </p>
-              <span>Emily R.</span>
-              <p>Marketing Director</p>
+              <div className="author-name">
+                <span>Emily R.</span>
+                <p>Marketing Director</p>
+              </div>
             </div>
+
             <div className="info-item">
-              <img src={manImage} alt="thomas.jpg" />
-              <p>
+              <div className="image-container">
+                <img src={manImage} alt="thomas.jpg" />
+              </div>
+              <p className="author-testimony">
                 Sunnyside’s enthusiasm coupled with their keen interest in our
                 brand’s success made it a satisfying and enjoyable experience.
               </p>
-              <span>Thomas S.</span>
-              <p>Chief Operating Officer</p>
+              <div className="author-name">
+                <span>Thomas S.</span>
+                <p>Chief Operating Officer</p>
+              </div>
             </div>
+
             <div className="info-item">
-              <img src={jennieImage} alt="jennieImage.jpg" />
-              <p>
+              <div className="image-container">
+                <img src={jennieImage} alt="jennieImage.jpg" />
+              </div>
+              <p className="author-testimony">
                 Incredible end result! Our sales increased over 400% when we
                 worked with Sunnyside. Highly recommended!
               </p>
-              <span>Jennie F.</span>
-              <p>Business Owner </p>
+              <div className="author-name">
+                <span>Jennie F.</span>
+                <p>Business Owner </p>
+              </div>
             </div>
           </div>
         </div>

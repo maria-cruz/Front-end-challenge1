@@ -59,6 +59,9 @@
     line-height: 1.5;
     margin-bottom: 4rem;
   }
+  .info-wrapper .description-container {
+    font-family: "Barlow", serif;
+  }
   .content-item .item-wrapper a {
     text-decoration: none;
     color: $black;
@@ -98,7 +101,7 @@
   }
 
   .author-section {
-    height: 60rem;
+    height: 80rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -111,10 +114,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60rem;
+    height: auto;
   }
 
   .author-wrapper .author-info {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20vw, 35rem));
+    text-align: center;
+    grid-column-gap: 5rem;
+  }
+
+  .author-wrapper .testimonial-label {
+    letter-spacing: 5px;
+    font-family: serif;
+    color: $gray;
+    margin-bottom: 6rem;
+  }
+
+  .author-info .info-item .image-container {
+    margin-bottom: 6rem;
+  }
+
+  .author-wrapper .author-info .info-item img {
+    border-radius: 50%;
+    max-width: 10rem;
+  }
+
+  .author-info .info-item .author-testimony {
+    line-height: 2;
+    margin-bottom: 10rem;
   }
 }
