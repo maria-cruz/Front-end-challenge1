@@ -109,7 +109,7 @@ const Home = () => {
                 worked with Sunnyside. Highly recommended!
               </p>
               <span>Jennie F.</span>
-              <p>Business Owner</p>
+              <p>Business Owner </p>
             </div>
           </div>
         </div>
