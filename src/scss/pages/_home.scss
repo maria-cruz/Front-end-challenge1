@@ -55,7 +55,6 @@
   }
 
   .content-item .item-wrapper .description-container {
-    color: $gray;
     line-height: 1.5;
     margin-bottom: 4rem;
   }
@@ -93,7 +92,6 @@
     padding-top: 30rem;
     text-align: center;
     font-family: serif;
-    color: $dark-gray;
   }
 
   .info-wrapper .item-label {
@@ -128,7 +126,7 @@
     letter-spacing: 5px;
     font-family: serif;
     color: $gray;
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
   }
 
   .author-info .info-item .image-container {
@@ -142,6 +140,43 @@
 
   .author-info .info-item .author-testimony {
     line-height: 2;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  .author-testimony,
+  .author-position,
+  .info-wrapper .description-container {
+    color: $dark-gray;
+  }
+
+  .info-wrapper .item-label {
+    color: $mortar;
+  }
+
+  .item-wrapper .description-container,
+  .author-position {
+    color: $gray;
+  }
+
+  .author-name span {
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  .author-position {
+    font-size: 1.6rem;
+  }
+
+  .images-section {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+  .images-section .image-item {
+    display: flex;
+  }
+  .image-item img {
+    max-width: 55rem;
+    width: 25vw;
+    height: auto;
   }
 }

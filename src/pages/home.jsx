@@ -8,6 +8,11 @@ import orangeImage from "../images/desktop/image-photography.jpg";
 import emilyImage from "../images/smallPhoto/image-emily.jpg";
 import manImage from "../images/smallPhoto/image-thomas.jpg";
 import jennieImage from "../images/smallPhoto/image-jennie.jpg";
+import milkBottles from "../images/desktop/image-gallery-milkbottles.jpg";
+import halfOrange from "../images/desktop/image-gallery-orange.jpg";
+import coneImage from "../images/desktop/image-gallery-cone.jpg";
+import cubeImage from "../images/desktop/image-gallery-sugarcubes.jpg";
+
 const Home = () => {
   return (
     <div className="home-page">
@@ -94,7 +99,7 @@ const Home = () => {
               </p>
               <div className="author-name">
                 <span>Emily R.</span>
-                <p>Marketing Director</p>
+                <p className="author-position">Marketing Director</p>
               </div>
             </div>
 
@@ -108,7 +113,7 @@ const Home = () => {
               </p>
               <div className="author-name">
                 <span>Thomas S.</span>
-                <p>Chief Operating Officer</p>
+                <p className="author-position">Chief Operating Officer</p>
               </div>
             </div>
 
@@ -122,10 +127,25 @@ const Home = () => {
               </p>
               <div className="author-name">
                 <span>Jennie F.</span>
-                <p>Business Owner </p>
+                <p className="author-position">Business Owner </p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="images-section">
+        <div className="image-item">
+          <img src={milkBottles} alt="milkbottles.jpg" />
+        </div>
+        <div className="image-item">
+          <img src={halfOrange} alt="orang.jpg" />
+        </div>
+        <div className="image-item">
+          <img src={coneImage} alt="cone.jpg" />
+        </div>
+        <div className="image-item">
+          <img src={cubeImage} alt="sugarcubes" />
         </div>
       </div>
     </div>

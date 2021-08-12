@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SpriteSheet from "../SpriteSheet";
 
 const Footer = () => {
   return (
@@ -24,6 +25,8 @@ const Footer = () => {
           </div>
         </ul>
       </nav>
+
+      <SpriteSheet />
     </div>
   );
 };
