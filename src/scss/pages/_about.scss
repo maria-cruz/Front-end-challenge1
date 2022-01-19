@@ -5,11 +5,13 @@
     overflow: hidden;
     display: grid;
     gap: 1rem;
+    padding: 2rem;
   }
 
   .recommendations-item {
     padding: max(3vw, 1.6rem);
     border-radius: 2rem;
+    box-shadow: 0 0.1rem 0.6rem $shadow;
   }
 
   .profile-img {
