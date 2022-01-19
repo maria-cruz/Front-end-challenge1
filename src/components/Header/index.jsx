@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HamburgerMenu from "../HamburgerMenu";
 
 const Header = () => {
   return (
@@ -26,6 +27,8 @@ const Header = () => {
                 <Link to="/contact">CONTACT</Link>
               </li>
             </div>
+
+            <HamburgerMenu />
           </ul>
         </nav>
       </div>

@@ -1,0 +1,68 @@
+.about-section {
+  .about-wrapper {
+    font-size: clamp(1.6rem, 3vw, 1.8rem);
+    color: lightgray;
+    overflow: hidden;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .recommendations-item {
+    padding: max(3vw, 1.6rem);
+    border-radius: 2rem;
+  }
+
+  .profile-img {
+    max-width: 7rem;
+    border-radius: 50%;
+  }
+
+  .joy-bg {
+    background-color: $violet;
+  }
+
+  .cams-bg {
+    background-color: $dark-red;
+  }
+
+  .maridin-bg {
+    background-color: $red;
+  }
+
+  .jerry-bg {
+    background-color: $dark-blue;
+  }
+
+  .basti-bg {
+    background-color: $dark-green;
+  }
+
+  .name-container,
+  .remarks-container {
+    font-weight: bold;
+    color: $white;
+  }
+
+  .remarks-container {
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    margin-bottom: 1rem;
+  }
+
+  .expanded-remarks {
+    line-height: 1.5;
+  }
+
+  .job-position {
+    font-size: clamp(1.4rem, 3vw, 1.6rem);
+  }
+
+  .profile-info-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .profile-info {
+    margin-left: 2rem;
+  }
+}

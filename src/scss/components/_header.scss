@@ -1,17 +1,21 @@
 .header-section {
   height: 80px;
   width: 100%;
-  padding: 2.5rem;
   display: block;
   background-color: $sky-blue;
-  .header-container {
-    display: flex;
-    justify-content: center;
+  padding: 3rem;
+  @include for-size(tablet-landscape-up) {
+    padding: 2.5rem;
   }
 
   .header-wrapper {
     max-width: 136.6rem;
     width: 100%;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: center;
   }
 
   .header-wrapper .menu-items-container {
@@ -22,8 +26,11 @@
     height: 3rem;
   }
   .menu-items-container .right-menu {
-    display: inline-flex;
     font-weight: 500;
+    display: none;
+    @include for-size(tablet-landscape-up) {
+      display: inline-flex;
+    }
   }
 
   .right-menu .menu-item {
@@ -42,5 +49,30 @@
   }
   .right-menu li > a:hover {
     color: $black;
+  }
+
+  .right-menu-mobile {
+    display: block;
+    @include for-size(tablet-landscape-up) {
+      display: none;
+    }
+  }
+
+  .hamburger-menu {
+    width: 22px;
+    height: 22px;
+    position: unset;
+    top: 3rem;
+    right: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger-menu .line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
   }
 }
