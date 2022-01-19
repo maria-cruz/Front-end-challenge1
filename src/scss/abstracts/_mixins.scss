@@ -14,36 +14,36 @@ $breakpoint argument choices:
 
 @mixin for-size($breakpoint) {
   @if $breakpoint == phone-only {
-    //0px
-    @media only screen and (max-width: 599px) {
+    //0px-600px
+    @media only screen and (max-width: 37.44em) {
       @content;
     }
   }
 
   @if $breakpoint == tablet-portrait-up {
     //600px
-    @media only screen and (min-width: 599px) {
+    @media only screen and (min-width: 37.44em) {
       @content;
     }
   }
 
   @if $breakpoint == tablet-landscape-up {
     //900px
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 56.25em) {
       @content;
     }
   }
 
   @if $breakpoint == desktop-up {
     //1200px
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 75em) {
       @content;
     }
   }
 
   @if $breakpoint == big-desktop-up {
     //1800px
-    @media only screen and (min-width: 1800px) {
+    @media only screen and (min-width: 112.5em) {
       @content;
     }
   }
