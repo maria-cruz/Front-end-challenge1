@@ -25,9 +25,11 @@
 
   .content-container {
     background-color: $green;
-    @media (min-width: 1200px) {
-      float: left;
-      width: 70%;
+    float: left;
+    width: 70%;
+    @media (max-width: 1200px) {
+      float: none;
+      width: 100%;
     }
   }
 }

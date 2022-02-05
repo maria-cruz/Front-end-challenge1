@@ -15,14 +15,14 @@ $breakpoint argument choices:
 @mixin for-size($breakpoint) {
   @if $breakpoint == phone-only {
     //0px-600px
-    @media only screen and (max-width: 37.44em) {
+    @media only screen and (max-width: 37.5rem) {
       @content;
     }
   }
 
   @if $breakpoint == tablet-portrait-up {
     //600px
-    @media only screen and (min-width: 37.44em) {
+    @media only screen and (min-width: 37.5rem) {
       @content;
     }
   }

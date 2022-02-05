@@ -1,13 +1,36 @@
 .about-section {
+  padding: 6rem 2rem;
   .recommendations-wrapper {
     font-size: clamp(1.6rem, 3vw, 1.8rem);
     color: lightgray;
     overflow: hidden;
     display: grid;
-    gap: 1rem;
-    padding: 2rem;
+    gap: 2.5rem;
+
+    @include for-size(tablet-portrait-up) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include for-size(desktop-up) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
+  .span-2 {
+    @include for-size(desktop-up) {
+      grid-column: span 2;
+    }
+  }
+
+  .recommendations-item:last-child {
+    @include for-size(tablet-portrait-up) {
+      grid-column: span 2;
+    }
+
+    @include for-size(desktop-up) {
+      grid-column-start: 4;
+      grid-row: 1 / span 2;
+    }
+  }
   .recommendations-item {
     padding: max(3vw, 1.6rem);
     border-radius: 2rem;
